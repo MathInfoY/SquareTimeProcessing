@@ -1,0 +1,10 @@
+C:\Users\yv.tremblay\Documents\Visual Studio 2013\Projects\SquareTimeProcessingService\SquareTimeProcessingServiceHost\bin\Release\SquareTimeProcessingServiceHost.exe.config
+C:\Users\yv.tremblay\Documents\Visual Studio 2013\Projects\SquareTimeProcessingService\SquareTimeProcessingServiceHost\bin\Release\SquareTimeProcessingServiceHost.exe
+C:\Users\yv.tremblay\Documents\Visual Studio 2013\Projects\SquareTimeProcessingService\SquareTimeProcessingServiceHost\bin\Release\SquareTimeProcessingServiceHost.pdb
+C:\Users\yv.tremblay\Documents\Visual Studio 2013\Projects\SquareTimeProcessingService\SquareTimeProcessingServiceHost\bin\Release\SquareTimeProcessingService.dll
+C:\Users\yv.tremblay\Documents\Visual Studio 2013\Projects\SquareTimeProcessingService\SquareTimeProcessingServiceHost\bin\Release\SquareTimeProcessingService.pdb
+C:\Users\yv.tremblay\Documents\Visual Studio 2013\Projects\SquareTimeProcessingService\SquareTimeProcessingServiceHost\obj\Release\SquareTimeProcessingServiceHost.csprojResolveAssemblyReference.cache
+C:\Users\yv.tremblay\Documents\Visual Studio 2013\Projects\SquareTimeProcessingService\SquareTimeProcessingServiceHost\obj\Release\SquareTimeProcessingServiceHost.exe
+C:\Users\yv.tremblay\Documents\Visual Studio 2013\Projects\SquareTimeProcessingService\SquareTimeProcessingServiceHost\obj\Release\SquareTimeProcessingServiceHost.pdb
+C:\Users\yv.tremblay\Documents\Visual Studio 2013\Projects\SquareTimeProcessingService\SquareTimeProcessingServiceHost\bin\Release\Tool.dll
+C:\Users\yv.tremblay\Documents\Visual Studio 2013\Projects\SquareTimeProcessingService\SquareTimeProcessingServiceHost\bin\Release\Tool.pdb

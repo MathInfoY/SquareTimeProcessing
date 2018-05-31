@@ -1,0 +1,10 @@
+c:\Users\yv.tremblay\Documents\Visual Studio 2013\Projects\SquareTimeProcessingService\SquareTimeProcessingServiceHost\bin\Debug\SquareTimeProcessingServiceHost.exe.config
+c:\Users\yv.tremblay\Documents\Visual Studio 2013\Projects\SquareTimeProcessingService\SquareTimeProcessingServiceHost\bin\Debug\SquareTimeProcessingServiceHost.exe
+c:\Users\yv.tremblay\Documents\Visual Studio 2013\Projects\SquareTimeProcessingService\SquareTimeProcessingServiceHost\bin\Debug\SquareTimeProcessingServiceHost.pdb
+c:\Users\yv.tremblay\Documents\Visual Studio 2013\Projects\SquareTimeProcessingService\SquareTimeProcessingServiceHost\bin\Debug\SquareTimeProcessingService.dll
+c:\Users\yv.tremblay\Documents\Visual Studio 2013\Projects\SquareTimeProcessingService\SquareTimeProcessingServiceHost\bin\Debug\SquareTimeProcessingService.pdb
+c:\Users\yv.tremblay\Documents\Visual Studio 2013\Projects\SquareTimeProcessingService\SquareTimeProcessingServiceHost\obj\Debug\SquareTimeProcessingServiceHost.csprojResolveAssemblyReference.cache
+c:\Users\yv.tremblay\Documents\Visual Studio 2013\Projects\SquareTimeProcessingService\SquareTimeProcessingServiceHost\obj\Debug\SquareTimeProcessingServiceHost.exe
+c:\Users\yv.tremblay\Documents\Visual Studio 2013\Projects\SquareTimeProcessingService\SquareTimeProcessingServiceHost\obj\Debug\SquareTimeProcessingServiceHost.pdb
+C:\Users\yv.tremblay\Documents\Visual Studio 2013\Projects\SquareTimeProcessingService\SquareTimeProcessingServiceHost\bin\Debug\Tool.dll
+C:\Users\yv.tremblay\Documents\Visual Studio 2013\Projects\SquareTimeProcessingService\SquareTimeProcessingServiceHost\bin\Debug\Tool.pdb
