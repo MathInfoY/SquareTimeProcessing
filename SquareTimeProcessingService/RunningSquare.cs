@@ -97,7 +97,6 @@ namespace SquareTimeProcessingService
             byte i = 0;
             Stopwatch watch = null; 
             byte nbCharOnLine = 0;
-            bool startWatch = false;
 
             while (!m_stopRunning)
             {
@@ -117,11 +116,13 @@ namespace SquareTimeProcessingService
 
                         if (!ToolBoard.CompareBitmaps((Image)screenBmp, (Image)m_dictColorCases[i]))
                         {
-                            m_dictColorCases[i].Dispose();
-                            m_dictColorCases[i] = screenBmp;
-                            File.AppendAllText(@GlobalFile.Log, DateTime.Now.ToString() + "\tCase = " + i + "(" + i + ")" + "\t\t" + m_DateFirstHitNoCase[i] + Environment.NewLine);
                             if (m_DateFirstHitNoCase[i] == default(DateTime))
+                            {
+                                File.AppendAllText(@GlobalFile.Log, DateTime.Now.ToString() + "\tCase = " + i + "\t\t\t" + m_DateFirstHitNoCase[i] + Environment.NewLine);
                                 m_DateFirstHitNoCase[i] = DateTime.Now;
+                                m_dictColorCases[i].Dispose();
+                                m_dictColorCases[i] = screenBmp;
+                            }
                         }
 
                     }
@@ -203,34 +204,30 @@ namespace SquareTimeProcessingService
          * avec le l'application Interface. La mise a jour apres que le Web Service l'ai detecté. On attends donc qu'il 
          * l'ai identifié
          */
-        static public bool SetFirstHit(byte nocase, DateTime def = default(DateTime))
+        static public void SetFirstHit(byte nocase, DateTime def = default(DateTime))
         {
-            bool wasHit = false;
             byte count = 0;
-            Bitmap screenBmp = null;
             DateTime test = def;
-
-            test = m_DateFirstHitNoCase[nocase];
-
+           
             // Attends que la mise a jour se fasse avant de refaire la mise a jour
             while(test == def && count < 5)
             {
-                File.AppendAllText(@GlobalFile.Log, DateTime.Now.ToString() + "\t Waiting Update..." + "(" + nocase + ")" + Environment.NewLine);
-                Thread.Sleep(1000);
+                if (count > 0)
+                {
+                    Thread.Sleep(1000);
+                    File.AppendAllText(@GlobalFile.Log, DateTime.Now.ToString() + "\tWaiting Update..." + Environment.NewLine);
+                } 
                 test = m_DateFirstHitNoCase[nocase];
                 count++;
             }
 
-            if (count < 5)
-            {
-                wasHit = true;
-                screenBmp = ToolBoard.TakePictureCaseColor(nocase);
-                m_dictColorCases[nocase] = screenBmp;
-            }
+            File.AppendAllText(@GlobalFile.Log, DateTime.Now.ToString() + "\tCase = " + nocase + "\t\tXXX" + Environment.NewLine);
 
+// Ne jamais deplace ces 3 lignes
+            m_dictColorCases[nocase].Dispose();
+            m_dictColorCases[nocase] = ToolBoard.TakePictureCaseColor(nocase);
             m_DateFirstHitNoCase[nocase] = def;
 
-            return (wasHit);
         }
 
         static public bool WaitSuspended()

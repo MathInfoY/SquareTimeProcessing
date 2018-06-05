@@ -61,9 +61,9 @@ namespace SquareTimeProcessingService
         }
 
 
-        public bool SetFirstHit(byte noCase)
+        public void SetFirstHit(byte noCase)
         {
-            return(RunningSquare.SetFirstHit(noCase));
+            RunningSquare.SetFirstHit(noCase);
         }
 
         public DateTime GetFirstHit(byte noCase)

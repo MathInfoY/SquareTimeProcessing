@@ -18,7 +18,7 @@ namespace SquareTimeProcessingService
         [OperationContract]
         bool isFirstLTSecund(byte FirstCase, byte SecundCase);
         [OperationContract]
-        bool SetFirstHit(byte noCase);
+        void SetFirstHit(byte noCase);
         [OperationContract]
         DateTime GetFirstHit(byte nocase);
         [OperationContract]
